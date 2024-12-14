@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="utility.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+        <div class="backarrow"><img class="invert backarrow" src="backarrow.svg" alt=""></div>
+            <div class="home bg-grey rounded p-1 m-1 ">
+                <ul>
+                    <div class="logo"><img class="invert" src="logo.svg" alt=""></div>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            <div class="library bg-grey rounded m-1 p-1 flex">
+                <div class="heading">
+                    <div class="head"><img class="invert" width="30px" src="playlist.svg" alt="">
+                        <h2>Your library</h2>
+
+                        <div class="songlist">
+                            <ul>
+                                <li>
+                                    <img src="info.svg" alt="">
+                                    <div class="info">
+                                        <div>song name</div>
+                                        <div>song artist</div>
+                                    </div>
+                                    <div class="playnow">
+                                        <span>
+
+                                            <img src="playc.svg" alt="">
+                                        </span>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/end-user-agreement/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="right bg-grey rounded m-1">
+            <div class="header">
+                <div class="nav invert">
+                    <div class="hamburgercontainer">
+
+                        <img width="30px" class="hamburger" src="hamburger.svg" alt="">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path
+                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                        <path d="M14 7C14 7 10 10.6824 10 12C9.99999 13.3176 14 17 14 17" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                    fill="none">
+                    <path
+                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                    <path d="M10 7C10 7 14 10.6824 14 12C14 13.3176 10 17 10 17" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+             </div>
+             </div>
+                <div class="buttons">
+                    <button class="singupbtn">Sign-up</button>
+                    <button class="loginbtn">Log-In</button>
+                </div>
+            </div>
+
+            <!-- PLAYLIST FOR THE MUSIC PLAYER -->
+            <div class="playlist">
+                <h1>Spotify Play-List</h1>
+                <div class="cardcontainer">
+                    <div class="card" data-folder="hindi">
+                        <div class="playbutton">
+                            <svg  viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle background -->
+                                <circle cx="20" cy="20" r="16" fill="#1fdf64" />
+                                <!-- Solid black play button -->
+                                <path d="M15 27V13L27 20L15 27Z" fill="black" />
+                            </svg>
+
+                        </div>
+
+                        <img src="https://i.scdn.co/image/ab67706f000000023f7b39872b6bb36288c1a52c".alt="">
+                        <h2>Hot Hits Hindi</h2>
+                        <p>Tune in to the Hottest Tracks</p>
+
+                    </div>
+                    <div class="card" data-folder="english">
+                        <div class="playbutton">
+                            <svg  viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle background -->
+                                <circle cx="20" cy="20" r="16" fill="#1fdf64" />
+                                <!-- Solid black play button -->
+                                <path d="M15 27V13L27 20L15 27Z" fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000029ff7f19ee0dc1067b0f955a1" alt="">
+                        <h2>Hot Hits English</h2>
+                        <p>Tune in to the Best Tracks</p>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="playbar">
+                        <div class="seekbar">
+        
+                            <div class="circle">
+                            </div>
+                        </div>
+                        <div class="abovebars">
+        
+                            <div class="songinfo">
+                                
+                            </div>
+                            <div class="songbuttons">
+                                <img id="previous" class="invert" src="pre.svg" alt="">
+                                <img id="play" src="play.svg" alt="">
+                                <img id="next" class="invert" src="next.svg" alt="">
+                            </div>
+                            <div class="timevol">
+        
+                                <div class="songtime">
+                                    
+                                </div>
+                                <div class="volume">
+                                    <img src="volume.svg" alt="">
+                                    
+                                    <div class="range">
+                                        <input type="range" min="0" max="100" value="50" class="slider"> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+   
+
+
+                
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+</body>
+
+</html> 
